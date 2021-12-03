@@ -1,5 +1,6 @@
 const {palindrome} = require("./EX01")
 const {convertToRoman} = require("./EX02")
+const {rot13} = require('./EX03')
 
 test("Is Palindrome", () => {
     expect(palindrome("eye")).toBe(true)
@@ -15,4 +16,8 @@ test("Convert to Roman", () => {
     expect(convertToRoman(4)).toBe("IV")
     expect(convertToRoman(798)).toBe("DCCXCVIII")
 
+})
+
+test("Convert to ROT13", () => {
+    expect(rot13('ABC Z')).toBe("NOP M")
 })
